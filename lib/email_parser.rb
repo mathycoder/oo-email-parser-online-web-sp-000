@@ -14,10 +14,7 @@ class EmailParser
   
   def parse
   #  binding.pry 
-    if self.email_string.include?(",")
-      self.email_string.split(",").join.split(" ").uniq
-    else
-      self.email_string.split(" ").uniq
+    self.email_string.split(/, | /).uniq
     end 
   end 
   
