@@ -14,7 +14,7 @@ class EmailParser
   
   def parse
   #  binding.pry 
-    self.email_string.split(/,\s|\s/).uniq
+    self.email_string.split(/,\s|\s/)
   end 
   
 end 
